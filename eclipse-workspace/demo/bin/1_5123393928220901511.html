@@ -1,0 +1,38 @@
+
+<head>
+<title>DashBaord</title>
+<style>
+ul li{
+color: red;
+float: left;
+display: block;;
+}
+li{
+padding: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<nav class="navbar navbar-expand-sm bg-dark">
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown" id="navbarDropdown"><a
+				class="nav-link" data-toggle="dropdown" [routerLink]="['']"> <b>AboutUs</b></a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" [routerLink]="['accreditation']">Accreditation</a>
+					<a class="dropdown-item" [routerLink]="['mission']">Mission
+						Statement</a>
+				</div></li>
+			<li class="nav-item"><a class="nav-link "
+				[routerLink]="['/academics']"><b>Academics</b></a></li>
+			<li class="nav-item"><a class="nav-link"
+				[routerLink]="['/programs']"><b>Programs</b></a></li>
+			<li class="nav-item"><a class="nav-link"
+				[routerLink]="['/admissions']"><b>Admissions</b></a></li>
+			<li class="nav-item"><a class="nav-link"
+				[routerLink]="['/campuses']"><b>Campuses</b></a></li>
+		</ul>
+	</nav>
+</div>
+</body>
+<router-outlet></router-outlet>
