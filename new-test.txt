@@ -1,0 +1,12 @@
+Test branch code and commint push 
+steps for creating git branch, add files and commit changes to origin branch 
+1. git clone <repository_url>
+2. cd <repository_directory>
+3. git checkout -b <new branch_name> " This command creates and switches to a new branch"
+4. open ur code and make the necessary changes to the code.
+5. git add .  "The . adds all changes. You can also replace . with specific file names if you only want to stage specific changes."
+6. git commit -m  "Your commit message here"
+7. git push origin <branch_name>
+
+
+
